@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FragmentsExample</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="button1_label">Show Fragment 1</string>
+    <string name="button2_label">Show Fragment 2</string>
+
+    <string name="Input1">Input 1</string>
+    <string name="Input2">Input 2</string>
+    <string name="Result">Result</string>
+    <string name="RBtn_Add">Addition</string>
+    <string name="RBtn_Mul">Multiplication</string>
+    <string name="RBtn_Div">Division</string>
+    <string name="ButnDsc">Solve</string>
+</resources>

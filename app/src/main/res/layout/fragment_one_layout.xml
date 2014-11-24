@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#ffaa6521">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Input1"
+            android:id="@+id/textView2"
+            android:textColor="#FFFFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/TextBox1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|number"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:editable="true"
+            android:textColor="#FFFFFFFF"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Input2"
+            android:layout_below="@+id/TextBox1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="33dp"
+            android:id="@+id/textView3"
+            android:textColor="#FFFFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/TextBox2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|number"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:editable="true"
+            android:textColor="#FFFFFFFF"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Result"
+            android:id="@+id/textView"
+            android:layout_below="@+id/TextBox2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:textColor="#FFFFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/TextBox_Result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|number"
+            android:editable="false"
+            android:clickable="false"
+            android:enabled="true"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFFFFFFF"/>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextBox_Result"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/gridLayout"
+            android:layout_alignParentTop="false"
+            android:columnCount="25"
+            android:rowCount="12">
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myRadioGroup"
+
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RBtn_Add"
+                    android:id="@+id/AddOper"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:textColor="#FFFFFFFF"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RBtn_Mul"
+                    android:id="@+id/MulOper"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:textColor="#FFFFFFFF"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RBtn_Div"
+                    android:id="@+id/DivOper"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:textColor="#FFFFFFFF"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subtraction"
+                    android:id="@+id/SubOper"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:textColor="#FFFFFFFF"
+                    />
+            </RadioGroup>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/Compute_Btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ButnDsc"
+
+            android:layout_row="4"
+            android:layout_column="9"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/Clear_Btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+
+            android:layout_row="5"
+            android:layout_column="9"
+            android:layout_below="@+id/Compute_Btn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>
